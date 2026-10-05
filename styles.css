@@ -1,0 +1,707 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;600;700;900&display=swap');
+
+#bachiller .accordion-button,
+#titulo .accordion-button {
+  font-size: 1.4rem;
+}
+
+#bachiller li,
+#titulo li {
+  font-size: 1rem;
+}
+
+.caja-texto {
+  display: inline-block;
+  background: rgba(0, 48, 135, 0.8);
+  padding: 25px 40px;
+  border-radius: 10px;
+}
+
+.caja-texto h1 {
+  color: white;
+  margin: 0;
+}
+
+.menu {
+  width: 100%;
+  background: #003087; /* azul UCSP */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgb(245, 242, 242);
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto; /* centra el contenedor */
+  display: flex;
+  align-items: center;
+}
+
+/* 30% */
+.menu-logo {
+  width: 30%;
+  padding: 20px 20px;
+}
+
+.menu-logo img {
+  max-height: 70px; 
+}
+
+/* 70% */
+.menu-links {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu-links a:hover {
+  color: #3b70e2;
+}
+
+/* BOTÓN HAMBURGUESA (oculto en desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.cabecera {
+  position: relative;
+  background: url('img/cabecera.png') no-repeat center center;
+  background-size: cover; /* 🔥 CLAVE */
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+
+.cabecera .contenido {
+    position: relative;
+    padding-bottom: 20px;
+    padding-right: 20%;
+    margin-right: 10%;
+}
+
+.cabecera h1 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.datos {
+  background: url('img/campus.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 20px;
+}
+
+.overlay-box {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.icono {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.label {
+  color: #003087;
+}
+
+.texto-padding {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.texto-final {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 18px;
+  margin: 2% 5%;
+  line-height: 2;
+}
+
+.texto-final strong {
+  font-weight: 900;
+}
+
+.titulo-linea {
+  position: relative;
+  font-family: 'Sofia Sans', sans-serif;
+  text-align: center; 
+  font-weight: bold;
+  font-size: 40px;
+  margin: 3% 0;
+}
+
+/* línea centrada */
+.titulo-linea::after {
+  content: "";
+  display: block;
+  width: 8%;
+  height: 8px;
+  background-color: #196D93;
+  margin: 10px auto 0; 
+}
+
+.banner-ucsp {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* Fondo azul con degradado */
+  background: linear-gradient(135deg, #3f6fb1 0%, #0d3c8c 70%);
+
+  padding: 0px 30px;
+}
+
+/* Texto blanco */
+.banner-ucsp .texto-final {
+  color: #ffffff;
+}
+
+.banner-ucsp h1 {
+  color: #ffffff;
+}
+
+/* Imagen más integrada */
+.banner-img {
+  max-width: 100%;
+  transform: scale(1.1);
+}
+
+/* Círculo decorativo (como tu imagen) */
+.banner-ucsp::before {
+  content: "";
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+
+/* instrucciones*/
+.instrucciones {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.recuerda {
+    text-align: center;
+    padding: 120px 0 0;
+}
+
+.instrucciones-box {
+    position: relative;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+    padding: 70px 38px 15px 38px;
+}
+
+.icono-top {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+}
+
+/* bachiller / titulado*/
+.seccion-lista {
+  background-color: #f2f4fb;
+}
+
+.titulo-seccion {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #003087;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.icono-seccion {
+  display: block;
+  margin: 0 auto;      
+  padding: 30px 0; 
+  width: 5%;
+}
+
+
+.accordion {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion-item {
+  background-color: #003087;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #003087;
+  color: white;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 28px;
+  box-shadow: none;
+  text-transform: uppercase;
+
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #003087;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  background-color: #003087;
+  color: white;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 20px;
+}
+
+.accordion-body ul {
+  padding-left: 20px;
+}
+
+.accordion-body li {
+  margin-bottom: 5px;
+}
+
+/* video*/
+.seccion-video {
+  padding-top: 100px;
+}
+
+
+/* FAQ */
+#faq .accordion-item {
+  background-color: #F2F4FB; /* caja */
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#faq .accordion-button {
+  background-color: #F2F4FB;
+  color: #003087; /* azul institucional */
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 25px;
+  box-shadow: none;
+  text-transform: none;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background-color: #F2F4FB;
+  color: #003087;
+}
+
+#faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+#faq .accordion-button::after {
+  filter: brightness(0); /* negra */
+}
+
+#faq .accordion-body {
+  background-color: #ffffff;
+  color: #000000; /* negro */
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 20px;
+}
+
+.contacto {
+  background-color: #003087;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 25px;
+  color: #ffffff; 
+}
+
+.btn-cta {
+  background-color: #ffffff;
+  color: #003087;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 14px 40px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Hover (muy importante para UX) */
+.btn-cta:hover {
+  background-color: #5478c2;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* BOTÓN */
+.btn-ucsp {
+  display: inline-block;
+  margin: 2% 5%;
+  padding: 12px 25px;
+  background: #ffffff;
+  color: #0d3c8c;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-ucsp:hover {
+  background: #e6e6e6;
+  transform: translateY(-2px);
+}
+
+/* CONTACTO */
+.contacto-info {
+  margin-top: 15px;
+}
+
+.contacto-info .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  margin: 2% 5%;
+}
+
+.contacto-info img {
+  width: 20px;
+  height: 20px;
+}
+
+.contacto-info {
+  text-align: center;
+}
+
+.item-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.icono-contacto {
+  width: 20px;   /* controla tamaño visual */
+  height: 20px;
+  object-fit: contain;
+}
+
+.btn-flotante {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  padding: 15px 20px;
+  border-radius: 8px;
+  
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.contacto-info a {
+  color: white;
+  text-decoration: none; /* opcional: quita el subrayado */
+  transition: 0.3s;
+}
+
+:root {
+  --menu-height: 300px;
+}
+
+#titulo,
+#bachiller,
+#faq {
+  scroll-margin-top: var(--menu-height);
+}
+
+/* =========================
+   TABLET / LAPTOP (max-width: 1200px)
+========================= */
+@media (max-width: 1200px) {
+
+  .menu-container {
+    padding: 0 20px; /* evita que quede pegado a los bordes */
+  }
+
+  .menu-logo img {
+    max-height: 60px; /* reduce un poco el logo */
+  }
+
+  .menu-links a {
+    font-size: 20px; /* baja tamaño del menú */
+  }
+
+  .cabecera {
+    min-height: 38vh; /* un poco más equilibrado */
+    background-size: cover; /* 🔥 clave */
+    background-position: center;
+    padding-top: 80px; /* altura del menú ajustada */
+  }
+
+  .cabecera .contenido {
+    padding-right: 10%;
+    margin-right: 5%;
+  }
+
+}
+
+/* =========================
+   MOBILE CORRECTO (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* Centrar botón */
+  .btn-ucsp {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  /* Contenedor */
+  .contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 🔥 centra todo */
+  }
+
+  /* Cada item */
+  .contacto-info .item {
+    justify-content: center; /* centra icono + texto */
+    text-align: center;
+  }
+
+  .menu-container {
+    flex-wrap: wrap;
+  }
+
+  .menu-logo {
+    width: 70%;
+  }
+
+  .menu-toggle {
+    display: block;
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .menu-links {
+    width: 100%;
+    flex-direction: column;
+    display: none; /* oculto */
+    background: #003087;
+    padding: 20px 0;
+  }
+
+  .menu-links a {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  /* cuando está activo */
+  .menu-links.active {
+    display: flex;
+  }
+
+  /* CABECERA */
+  .cabecera {
+    min-height: 20vh;   
+    background-size: cover;
+    background-position: top;
+  }
+
+  .cabecera .contenido {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .cabecera h1 {
+    font-size: 12px !important;
+  }
+
+  /* DATOS */
+  .datos {
+    padding: 30px 15px !important;
+    font-size: 16px !important;
+    min-height: 60vh;
+  }
+
+  .datos p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .datos .icono {
+    flex-shrink: 0;
+    width: 25px;
+    margin-top: 4px;
+  }
+
+  .datos p > span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .datos .label {
+    display: block;
+    font-weight: 600;
+  }
+
+  .overlay-box {
+    padding: 20px 15px !important;
+  }
+
+  /* TITULOS */
+  .titulo-linea {
+    font-size: 26px !important;
+    margin: 30px 0 !important;
+  }
+
+  .titulo-linea::after {
+    width: 20%;
+    height: 5px;
+  }
+
+  /* INSTRUCCIONES */
+  .instrucciones {
+    padding: 60px 40px !important;
+  }
+
+  .instrucciones-box {
+    margin: 0 !important;
+    padding: 25px 15px !important;
+    font-size: 18px !important;
+  }
+
+  .icono-top {
+    width: 60px;
+    top: -30px;
+  }
+
+  /* TEXTO FINAL */
+  .texto-final {
+    margin: 20px 15px !important;
+    font-size: 18px !important;
+    text-align: center;
+  }
+
+  /* SECCION LISTA */
+  .seccion-lista {
+    padding: 25px 10px !important;
+  }
+
+  .titulo-seccion {
+    font-size: 26px !important;
+    padding: 10px !important;
+  }
+
+  .icono-seccion {
+    padding: 20px 0 !important;
+    width: 60px;
+  }
+
+  /* ACORDEONES (CLAVE) */
+  .accordion {
+    padding: 0 !important;
+  }
+
+  .accordion-item {
+    margin-bottom: 10px !important;
+    border-radius: 6px !important;
+  }
+
+  .accordion-button {
+    font-size: 16px !important;
+    min-height: auto !important;
+    padding: 12px 15px !important;
+  }
+
+  .accordion-body {
+    font-size: 15px !important;
+    padding: 12px 15px !important;
+  }
+
+  /* ASEGURA QUE SE APILEN */
+  .accordion-item + .accordion-item {
+    margin-top: 10px !important;
+  }
+
+  /* FAQ */
+  #faq {
+    padding: 25px 10px !important;
+  }
+
+  #faq .accordion-button {
+    font-size: 16px !important;
+    padding: 12px 15px !important;
+  }
+
+  #faq .accordion-body {
+    font-size: 15px !important;
+    padding: 12px 15px !important;
+  }
+
+  /* VIDEO */
+  .seccion-video {
+    padding-top: 30px !important;
+  }
+
+  .contacto {
+  font-size: 16px;
+  }
+
+  .btn-flotante img {
+    width: 100px;           /* si tiene icono */
+  }
+
+}

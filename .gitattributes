@@ -1,0 +1,9 @@
+# Normalizar saltos de línea
+* text=auto
+
+# Archivos que existen en el repo pero NO se incluyen en el ZIP de entrega (git archive)
+.gitignore export-ignore
+.gitattributes export-ignore
+empaquetar.ps1 export-ignore
+CLAUDE.md export-ignore
+.claude export-ignore
