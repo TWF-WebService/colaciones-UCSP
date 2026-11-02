@@ -11,7 +11,7 @@ toggle.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-fetch('data.json')
+fetch('data-colacion-2026-11.json')
   .then(res => res.json())
   .then(data => {
 
@@ -21,6 +21,15 @@ fetch('data.json')
     render(bachiller, "bachiller");
     render(titulo, "titulo");
   });
+
+const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
+  'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+// Ordena los periodos ("Consejo Universitario de agosto") cronológicamente por mes.
+function ordenPeriodo(periodo) {
+  const i = MESES.indexOf(periodo.split(' ').pop().toLowerCase());
+  return i === -1 ? MESES.length : i;
+}
 
 function render(lista, containerId) {
 
@@ -34,7 +43,8 @@ function render(lista, containerId) {
 
     const alumnosEscuela = lista.filter(a => a.escuela === escuela);
 
-    const periodos = [...new Set(alumnosEscuela.map(a => a.periodo))];
+    const periodos = [...new Set(alumnosEscuela.map(a => a.periodo))]
+      .sort((a, b) => ordenPeriodo(a) - ordenPeriodo(b));
 
     const periodosHTML = periodos.map(periodo => {
 

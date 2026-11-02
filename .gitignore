@@ -16,3 +16,7 @@ desktop.ini
 *.log
 *.tmp
 *.bak
+
+# Listas de graduados en Excel (datos fuente del cliente)
+*.xlsx
+*.xls

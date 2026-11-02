@@ -7,3 +7,6 @@
 empaquetar.ps1 export-ignore
 CLAUDE.md export-ignore
 .claude export-ignore
+*.xlsx export-ignore
+*.xls export-ignore
+data-antigua export-ignore
