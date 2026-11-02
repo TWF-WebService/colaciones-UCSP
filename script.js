@@ -1,8 +1,8 @@
-// 🔧 MODIFICACIÓN TEMPORAL (a pedido del cliente):
-// Los botones con el nombre de cada escuela se siguen mostrando,
-// pero al hacer clic ya NO se despliega la lista de alumnos.
-// Para restaurar el comportamiento normal, volver a poner esto en `true`.
-const MOSTRAR_LISTAS = false;
+// Interruptor de las listas de alumnos:
+//  - true  -> al hacer clic en cada escuela se despliega la lista de alumnos.
+//  - false -> los botones de escuela se muestran, pero la lista queda oculta
+//             (modo usado temporalmente a pedido del cliente).
+const MOSTRAR_LISTAS = true;
 
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu-links');
