@@ -205,6 +205,81 @@
 }
 
 
+/* atencion (aviso ancho completo) */
+.atencion {
+  background: #fff;
+  padding: 60px 3% 0;
+}
+
+.atencion-box {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  font-family: 'Sofia Sans', sans-serif;
+  text-align: center;
+}
+
+.atencion-head {
+  background: #e84f4f;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.atencion-head svg {
+  width: 52px;
+  height: 52px;
+}
+
+.atencion-body {
+  padding: 22px 6% 34px;
+  color: #3b4a73;
+  font-size: 21px;
+  line-height: 1.55;
+}
+
+.atencion-body h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #1a2e6b;
+  margin: 0 0 14px;
+}
+
+.atencion-body p {
+  margin: 0 0 14px;
+}
+
+.atencion-body p:last-child {
+  margin-bottom: 0;
+}
+
+.atencion-body strong {
+  color: #1a2e6b;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .atencion {
+    padding: 35px 15px 0 !important;
+  }
+
+  .atencion-body {
+    padding: 18px 18px 26px;
+    font-size: 17px;
+  }
+
+  .atencion-body h2 {
+    font-size: 28px;
+  }
+
+  .atencion-head svg {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* instrucciones*/
 .instrucciones {
   text-align: center;
